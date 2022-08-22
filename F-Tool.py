@@ -112,6 +112,5 @@ def attack():
         global attack_num
         attack_num += 1
         print (f"{green}Sent{red} {send}{green} packet{blue} {ip}{green} port {yellow}{port}{default}")
-	print(attack_num)
         s.close()
 #print('Atacando porta 💥')
