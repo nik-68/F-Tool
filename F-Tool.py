@@ -65,18 +65,22 @@ import ssl
 import datetime
 os.system("clear")
 
-print ('''
-                __                      _____
-               / /  __ _ _   _  ___ _ _|___  |
-              / /  / _` | | | |/ _ \ '__| / /
-             / /__| (_| | |_| |  __/ |   / /
-             \____/\__,_|\__, |\___|_|  /_/
-                         |___/
-- - - - - - - - - - - - - - - - - - - - - - - - -
-~~~ TOOL DQV-DDoS Layer7 (DDoS)
-- - - - - - - - - - - - - - - - - - - - - - - - -''')
-
-
+print("""
+             __      ANONYMOUS       _____
+            / /  __ _ _   _  ___ _  |___  |
+           / /  / _` | | | |/ _ \ '__| / /
+          / /__| (_| | |_| |  __/ |   / /
+          \____/\__,_|\__, |\___|_|  /_/
+                      |___/
+                 ADDED NEW METHOD 
+               DDoS Layer7 (DDoS) 💥
+""")
+print(- - - - - - - - - - - - - - - - - - - - - - - - -''')
+#ip
+url = input(" Url: => ")
+url_chek =requests.get(url)
+ip = socket.gethostbyname(url.replace("https://","").replace("http://",""))
+print(ip)
 
 
 acceptall = [
