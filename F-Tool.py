@@ -47,16 +47,6 @@ time.sleep(3)
 os.system("clear")
 print()
 
-
-number_list = ['1', '2', '3', '4']
-num2208 = '0'
-wwyd = "What do you want to do?"
-login = '0'
-msg = "Booting up..."
-email_list = ['Philipp', 'ichbin', 'renner']
-pass1 = "Philipp2205"
-pass2 = "Ichbin4563"
-pass3 = "renner37"
 notALL = "Your not allowed to youse this programm. QUIT in 4 Seconds."
 
 os.system('color 2')
@@ -69,63 +59,6 @@ print(
 print(msg)
 time.sleep(1)
 
-
-email = input("What is your Username? : ")
-contains_email = email in email_list
-
-if contains_email == True:
-
-    Password = input("What is your Password? : ")
-    
-    if email == 'Philipp':
-        
-        if Password == pass1:
-            
-            print("You are now logged in.")
-            login = '1'
-                    
-        else:
-        
-            print(notALL)
-            time.sleep(4)
-            quit()
-
-        
-    if email == 'ichbin':
-        
-        if Password == pass2:
-            
-            print("You are now logged in.")
-            login = '1'
-            
-        else:
-        
-            print(notALL)
-            time.sleep(4)
-            quit()
-
-            
-    if email == 'renner':
-        
-        if Password == pass3:
-            
-            print("You are now logged in.")
-            login = '1'
-            
-        else:
-             
-            print(notALL)
-            time.sleep(4)
-            quit()
-
-else:
-    
-    print(notALL)
-    time.sleep(4)
-    quit()
-
-
-if login == '1':
     
     os.system('cls')
     print(wwyd)
