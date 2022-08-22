@@ -128,7 +128,17 @@ if __name__ == "__main__":
   banner()
   check_net_con()
 ############ we will take input#####
-  try:
+  
+#########################################################################
+#ip
+url = input("\033[94m╔═══\033[91m[ Url ] •\n\033[94m╠══>\033[0m ")
+url_chek =requests.get(url)
+ip = socket.gethostbyname(url.replace("https://","").replace("http://",""))
+print(ip)
+time.sleep(2.5)
+print("\033[94m")
+#########################################################################
+ try:
     ip = input("\033[94m╔═══\033[91m[ Target IP ] •\n\033[94m╠══>\033[0m ")
     port = int(input("\033[94m╠═══\033[91m[ Enter PORT ] •\n\033[94m╠══>\033[0m "))
 	
