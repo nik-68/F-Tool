@@ -19,9 +19,6 @@ from operator import contains
 from platform import system
 import random
 from socket import timeout
-import os
-import sys
-import time
 from time import sleep
 import math
 from threading import Thread, Timer
@@ -52,7 +49,7 @@ def  type(s):
 
               time.sleep(0.045)
 
-type("""Tools DDos NEW METHOD AND BYPASSED""")
+type("""DDos NEW METHOD AND cc/post/head/slow/check""")
 time.sleep(3)
 os.system("clear")
 
