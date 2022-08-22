@@ -32,7 +32,6 @@ from threading import Thread
 import random
 import time
 import scapy
-import rainbowtext
 import colorama
 from scapy.all import *
 import socket
