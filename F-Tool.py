@@ -50,9 +50,6 @@ import os
 import sys
 import argparse
 from colorama import Fore
-
-os.system("@cls & @title Overload DDOS Tool by: 7zx and 8fn & @color e")
-
 # Get the actual directory
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
@@ -66,7 +63,6 @@ try:
 except ImportError as err:
     CriticalError("Failed to import some packages", err)
     sys.exit(1)
-
 method = "HTTP"
 logo = """
  ▒█████   ██▒   █▓▓█████  ██▀███   ██▓     ▒█████   ▄▄▄      ▓█████▄ 
