@@ -92,7 +92,7 @@ fake_ip = '77.109.33.232'
 #########################################################################
 #ip
 url = input("\033[94m╔═══\033[91m[ Url ] •\n\033[94m╠══>\033[0m ")
-url_chek =requests.get(url)
+url_chek = requests.get(url)
 ip = socket.gethostbyname(url.replace("https://","").replace("http://",""))
 print(ip)
 print("\033[94m")
@@ -146,4 +146,3 @@ except Exception as err:
     print(f"{red}{err}{default}")
     exit()
 #print('Atacando porta 💥')
-
