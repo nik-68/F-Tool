@@ -33,7 +33,6 @@ import random
 import time
 import scapy
 import colorama
-from scapy.all import *
 import socket
 import threading
 import random
