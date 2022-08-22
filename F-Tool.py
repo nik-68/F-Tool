@@ -1,7 +1,4 @@
 import random, socket, threading
-import threading
-from threading import Thread, Timer
-import requests
 from concurrent.futures import ThreadPoolExecutor
 from random import choice, randint
 from socket import socket, AF_INET, SOCK_STREAM, error
@@ -10,17 +7,16 @@ import socket, threading
 from threading import Thread
 import random
 import time
-import socket
 import os, sys
-import colorama
-import socket
 import threading
-import random
 import requests
 from socket import socket,AF_INET , SOCK_DGRAM,SOCK_STREAM,gaierror
 from random import _urandom
 from os import system
 from sys import exit
+from colorama import *
+from time import sleep
+import socket
 
 #########Terminal colors################
 red = "\033[1;31m"
