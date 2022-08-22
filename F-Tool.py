@@ -116,7 +116,7 @@ def req_send(ip,port,byte):
       port = 1
 
 if __name__ == "__main__":
-	check_net_con()
+
 ############ we will take input#####
 try:
     ip = input("\033[94m╔═══\033[91m[ Enter Target IP ] •\n\033[94m╠══>\033[0m ")
