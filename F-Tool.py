@@ -33,6 +33,12 @@ import random
 import time
 import socket
 import socket, requests
+import scapy
+import rainbowtext
+import requests
+import colorama
+import pyfiglet
+import pyuseragents
 
 time.sleep(1)
 os.system("clear")
