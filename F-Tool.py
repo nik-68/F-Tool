@@ -111,20 +111,21 @@ def req_send(ip,port,byte):
 if __name__ == "__main__":
 	check_net_con()
 ############ we will take input#####
-try:
+  try:
     ip = input(f"{green} Enter Target IP or Hostname : {default}")
     port = int(input(f"{green} Enter Port Number : {default}"))
     
     if not (ip == "" or port == ""):
       byte = _urandom(1490)
       req_send(ip,port,byte)
-   else:
+    else:
       print(f"{red}IP address and Port number is required {default}")
       exit()
- except ValueError:
+      
+  except ValueError:
     print(f"{red}Port number must be int not a str{default}")
     exit()
- except Exception as err:
+  except Exception as err:
     print(f"{red}{err}{default}")
     exit()
 #print('Atacando porta 💥')
