@@ -111,7 +111,7 @@ def req_send(ip,port,byte):
 if __name__ == "__main__":
 	check_net_con()
 ############ we will take input#####
-  try:
+try:
     ip = input(f"{green} Enter Target IP or Hostname : {default}")
     port = int(input(f"{green} Enter Port Number : {default}"))
     
