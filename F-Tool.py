@@ -112,8 +112,8 @@ if __name__ == "__main__":
 	check_net_con()
 ############ we will take input#####
 try:
-    ip = input(f"{green} Enter Target IP or Hostname : {default}")
-    port = int(input(f"{green} Enter Port Number : {default}"))
+    ip = input(f"{green} Enter Target IP or Hostname : => {default}")
+    port = int(input(f"{green} Enter Port Number : => {default}"))
     
     if not (ip == "" or port == ""):
       byte = _urandom(1490)
