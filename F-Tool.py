@@ -60,9 +60,8 @@ print(msg)
 time.sleep(1)
 
     
-    os.system('cls')
-    print(wwyd)
-    print("\n\n[1] Ip of Domain \n[2] IP DDOS \n[3] IP Localization \n[4] QUIT")
+print(wwyd)
+print("\n\n[1] Ip of Domain \n[2] IP DDOS \n[3] IP Localization \n[4] QUIT")
     num1 = input("\nPaste your Number: ")
     
     if num1 == '1':
