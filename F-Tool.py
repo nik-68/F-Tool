@@ -31,14 +31,26 @@ import socket, threading
 from threading import Thread
 import random
 import time
-import socket
-import socket, requests
 import scapy
 import rainbowtext
-import requests
 import colorama
-import pyfiglet
+from scapy.all import *
+import socket
+import threading
+import random
 import pyuseragents
+import requests
+from rainbowtext import text as rain
+import pyfiglet , colorama
+
+rd = colorama.Fore.RED
+cv = colorama.Fore.WHITE
+bl = colorama.Fore.BLUE
+gn = colorama.Fore.GREEN
+yl = colorama.Fore.YELLOW
+mag = colorama.Fore.MAGENTA
+cy = colorama.Fore.CYAN
+lgn = colorama.Fore.LIGHTGREEN_EX
 
 time.sleep(1)
 os.system("clear")
@@ -95,15 +107,6 @@ print("\033[94m")
 #########################################################################
 
 fake_ip = '77.109.33.232'
-
-from scapy.all import *
-import socket
-import threading
-import random
-import pyuseragents
-import requests
-from rainbowtext import text as rain
-import pyfiglet , colorama
 
 rd = colorama.Fore.RED
 cv = colorama.Fore.WHITE
