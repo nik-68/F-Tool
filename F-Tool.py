@@ -74,11 +74,6 @@ print("""
                DDoS Layer7 (DDoS) 💥
 """)
 print()
-#ip
-url = input(" Url: => ")
-url_chek =requests.get(url)
-ip = socket.gethostbyname(url.replace("https://","").replace("http://",""))
-print(ip)
 #########################################################################
 # CLEAR
 def clear():
