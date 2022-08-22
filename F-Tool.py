@@ -92,12 +92,6 @@ clear()
 print("\033[94m")
 #########################################################################
 
-############ we will take input#####
-try:
-    ip = input("\033[94m╔═══\033[91m[ Enter Target IP ] •\n\033[94m╠══>\033[0m ")
-    port = int(input("\033[94m╠═══\033[91m[ Enter Port ] •\n\033[94m╠══>\033[0m "))
-############ we will take input#####
-
 fake_ip = '77.109.33.232'
 
 def attack():
