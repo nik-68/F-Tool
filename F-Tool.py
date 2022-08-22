@@ -1,26 +1,5 @@
-import socket
-import random
-import os
-import time
-import random
-import socket
-import threading
-import time
-import os,sys
 import random, socket, threading
-import os
-import getpass
-from ast import Num
-import code
-import requests
-import socket
-from multiprocessing.connection import wait
-from operator import contains
-from platform import system
-import random
-from socket import timeout
-from time import sleep
-import math
+import threading
 from threading import Thread, Timer
 import requests
 from concurrent.futures import ThreadPoolExecutor
@@ -31,7 +10,8 @@ import socket, threading
 from threading import Thread
 import random
 import time
-import scapy
+import socket
+import os, sys
 import colorama
 import socket
 import threading
@@ -95,11 +75,9 @@ url = input("\033[94m╔═══\033[91m[ Url ] •\n\033[94m╠══>\033[0m 
 url_chek = requests.get(url)
 ip = socket.gethostbyname(url.replace("https://","").replace("http://",""))
 print(ip)
+time.sleep(2.5)
 print("\033[94m")
 #########################################################################
-time.sleep(2.5)
-
-
 
 def check_net_con():
   try:
