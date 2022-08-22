@@ -29,7 +29,7 @@ import threading
 time.sleep(1)
 os.system("clear")
 
-os.system("figlet DDoS IP tool")
+os.system("figlet DDoS IP")
 time.sleep(3)
 
 def  type(s):
