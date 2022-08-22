@@ -72,7 +72,7 @@ print("""
                  ADDED NEW METHOD 
                DDoS Layer7 (DDoS) 💥
 """)
-print(- - - - - - - - - - - - - - - - - - - - - - - - -''')
+print()
 #ip
 url = input(" Url: => ")
 url_chek =requests.get(url)
