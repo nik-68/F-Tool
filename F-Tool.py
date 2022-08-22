@@ -118,7 +118,7 @@ try:
     if not (ip == "" or port == ""):
       byte = _urandom(1490)
       req_send(ip,port,byte)
-else:
+   else:
       print(f"{red}IP address and Port number is required {default}")
       exit()
  except ValueError:
