@@ -63,18 +63,6 @@ def clear():
 	os.system('cls' if os.name=='nt' else 'clear')
 #########################################################################
 
-fake_ip = '77.109.33.232'
-  
-#########################################################################
-#ip
-url = input("\033[94m╔═══\033[91m[ Url ] •\n\033[94m╠══>\033[0m ")
-url_chek = requests.get(url)
-ip = socket.gethostbyname(url.replace("https://","").replace("http://",""))
-print(ip)
-time.sleep(2.5)
-print("\033[94m")
-#########################################################################
-
 from socket import socket,AF_INET , SOCK_DGRAM,SOCK_STREAM,gaierror
 from random import _urandom
 from os import system
@@ -94,7 +82,7 @@ url = input("\033[94m╔═══\033[91m[ Url ] •\n\033[94m╠══>\033[0m 
 url_chek =requests.get(url)
 ip = socket.gethostbyname(url.replace("https://","").replace("http://",""))
 print(ip)
-time.sleep(2.5)
+print()
 #########################################################################
 # MAIN MENU 
 print()
