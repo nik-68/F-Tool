@@ -58,15 +58,13 @@ print("""
 """)
 print()
 #########################################################################
+# IMPORT MODULE
+import os, sys, socket, threading, random
+#########################################################################
 # CLEAR
 def clear():
 	os.system('cls' if os.name=='nt' else 'clear')
 #########################################################################
-
-from socket import socket,AF_INET , SOCK_DGRAM,SOCK_STREAM,gaierror
-from random import _urandom
-from os import system
-from sys import exit
 
 #########Terminal colors################
 red = "\033[1;31m"
@@ -82,8 +80,7 @@ url = input("\033[94m╔═══\033[91m[ Url ] •\n\033[94m╠══>\033[0m 
 url_chek =requests.get(url)
 ip = socket.gethostbyname(url.replace("https://","").replace("http://",""))
 print(ip)
-print()
-#########################################################################
+
 # MAIN MENU 
 print()
 target = str(input("\033[94m╔═══\033[91m[ IP ] •\n\033[94m╠══>\033[0m "))
