@@ -109,7 +109,7 @@ def req_send(ip,port,byte):
       port = 1
 
 if __name__ == "__main__":
-check_net_con()
+	check_net_con()
 ############ we will take input#####
   try:
     ip = input(f"{green} Enter Target IP or Hostname : {default}")
