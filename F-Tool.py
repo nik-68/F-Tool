@@ -24,8 +24,6 @@ import sys
 import time
 from time import sleep
 import math
-import threading
-import threading
 from threading import Thread, Timer
 import requests
 from concurrent.futures import ThreadPoolExecutor
@@ -63,30 +61,9 @@ import socket
 import threading
 import time
 import os,sys
-
+import ssl
+import datetime
 os.system("clear")
-print("""
-\033[31m██████░░░██░░░██░░███████░░░░█████░
-\033[32m░░░░██░░░██░░░██░░░░███░░░░██░░░░░██
-\033[33m░░██░░░░░██░░░██░░░░███░░░░██░░░░░██
-\033[34m██░░░░░░░██░░░██░░░░███░░░░██░░░░░██
-\033[35m██████░░░██████░░░░░███░░░░░░█████░
-""")
-print("\033[31m━━━ Want to Ddos? (y/n)")
-choice = str(input("┗━━━━━━>\033[0m:"))
-time.sleep(1)
-print("\033[31m━━━ Host/IP")
-url = str(input("┗━━━━━━>\033[0m:"))
-time.sleep(1)
-print("\033[31m━━━ Pakets")	
-times = int(input("┗━━━━━━>\033[0m:"))
-time.sleep(1)
-print("\033[31m━━━ Threads")
-thread = int(input("┗━━━━━━>\033[0m:"))
-
-
-
-
 
 print ('''
                 __                      _____
@@ -94,12 +71,10 @@ print ('''
               / /  / _` | | | |/ _ \ '__| / /
              / /__| (_| | |_| |  __/ |   / /
              \____/\__,_|\__, |\___|_|  /_/
-                          |___/
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                         |___/
+- - - - - - - - - - - - - - - - - - - - - - - - -
 ~~~ TOOL DQV-DDoS Layer7 (DDoS)
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-~~~ Bản Quyền: Đặng Quốc Vinh
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -''')
+- - - - - - - - - - - - - - - - - - - - - - - - -''')
 
 
 
