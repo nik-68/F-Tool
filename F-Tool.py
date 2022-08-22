@@ -113,24 +113,7 @@ def check_net_con():
 def banner():
   global red,blue,green,yellow,white,default
   system("clear" or "cls")
-  print(f"""{blue}
-   ______   ______   _______  _______  \n
-  (  __  \ (  __  \ (  ___  )(  ____ \ \n
-  | (  \  )| (  \  )| (   ) || (    \/ \n
-  | |   ) || |   ) || |   | || (_____  \n 
-  | |   | || |   | || |   | |(_____  ) \n
-  | |   ) || |   ) || |   | |      ) | \n
-  | (__/  )| (__/  )| (___) |/\____) | \n
-  (______/ (______/ (_______)\_______) \n
-{default}
-  """)
-  print(50 * f"{green}_{default}")
-  print("\n")
-  print(f"\t\t{green}Created By {red}ELProfessor67{default}\n")
-  print(50 * f"{green}_{default}")
-  print("\n\n")
-  
-####### we will send requests #######
+  ####### we will send requests #######
 def req_send(ip,port,byte):
   sock = socket(AF_INET,SOCK_DGRAM)
   send = 0
