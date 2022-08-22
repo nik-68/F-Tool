@@ -45,45 +45,7 @@ def  type(s):
 type("""Tools DDos Methods IP tool""")
 time.sleep(3)
 os.system("clear")
-print()
-
-notALL = "Your not allowed to youse this programm. QUIT in 4 Seconds."
-
-os.system('color 2')
-print(
-    
-    "▒█▀▀█ █░░█ █░░█ ▀▀█▀▀ █░░█ █▀▀█ █▀▀▄ ▄█░\n▒█▄▄█ █▀▀█ █▄▄█ ░░█░░ █▀▀█ █░░█ █░░█ ░█░\n▒█░░░ ▀░░▀ ▄▄▄█ ░░▀░░ ▀░░▀ ▀▀▀▀ ▀░░▀ ▄█▄"
-)
-
-
-print(msg)
-time.sleep(1)
-
-    
-print(wwyd)
-print("\n\n[1] Ip of Domain \n[2] IP DDOS \n[3] IP Localization \n[4] QUIT")
-    num1 = input("\nPaste your Number: ")
-    
-    if num1 == '1':
-        
-        os.system('cls')
-        print("\n\n\n▀█▀ ▒█▀▀█ 　 ▒█▀▀▀█ ▒█▀▀▀ 　 ▒█▀▀▄ ▒█▀▀▀█ ▒█▀▄▀█ ░█▀▀█ ▀█▀ ▒█▄░▒█\n▒█░ ▒█▄▄█ 　 ▒█░░▒█ ▒█▀▀▀ 　 ▒█░▒█ ▒█░░▒█ ▒█▒█▒█ ▒█▄▄█ ▒█░ ▒█▒█▒█\n▄█▄ ▒█░░░ 　 ▒█▄▄▄█ ▒█░░░ 　 ▒█▄▄▀ ▒█▄▄▄█ ▒█░░▒█ ▒█░▒█ ▄█▄ ▒█░░▀█ ")
-    	
-        
-        s= socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-        
-        host = input("\nWhat Domain should we youse? : ")
-        
-        
-        ip = socket.gethostbyname(host)
-        
-        print("\nDie IP Adresse lautet: ",ip)
-        
-        print("Auto close in 10 Seconds...")
-        time.sleep(10)
-            
-
-              
+                         
     else:
         
         if num1 == '2':
