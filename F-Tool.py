@@ -45,12 +45,8 @@ def  type(s):
 type("""Tools DDos Methods IP tool""")
 time.sleep(3)
 os.system("clear")
-                         
-    else:
-        
-        if num1 == '2':
-            os.system('cls')
-            print("\n\n\n▀█▀ ▒█▀▀█ 　 ▒█▀▀▄ ▒█▀▀▄ ▒█▀▀▀█ ▒█▀▀▀█\n▒█░ ▒█▄▄█ 　 ▒█░▒█ ▒█░▒█ ▒█░░▒█ ░▀▀▀▄▄\n▄█▄ ▒█░░░ 　 ▒█▄▄▀ ▒█▄▄▀ ▒█▄▄▄█ ▒█▄▄▄█")
+
+print("\n\n\n▀█▀ ▒█▀▀█ 　 ▒█▀▀▄ ▒█▀▀▄ ▒█▀▀▀█ ▒█▀▀▀█\n▒█░ ▒█▄▄█ 　 ▒█░▒█ ▒█░▒█ ▒█░░▒█ ░▀▀▀▄▄\n▄█▄ ▒█░░░ 　 ▒█▄▄▀ ▒█▄▄▀ ▒█▄▄▄█ ▒█▄▄▄█")
             
             ip = str(input('[*][Ip Adress]: => '))
             port = int(input('[*][Port]: => '))
