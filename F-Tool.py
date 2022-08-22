@@ -121,10 +121,10 @@ try:
     else:
       print(f"{red}IP address and Port number is required {default}")
       exit()
-  except ValueError:
+except ValueError:
     print(f"{red}Port number must be int not a str{default}")
     exit()
-  except Exception as err:
+except Exception as err:
     print(f"{red}{err}{default}")
     exit()
 #print('Atacando porta 💥')
